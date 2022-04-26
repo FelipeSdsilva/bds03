@@ -6,4 +6,5 @@ import com.devsuperior.bds03.entities.Employee;
 
 public interface EmployeeRepository extends JpaRepository<Employee, Long> {
 
+	Employee findByEmail(String email);
 }
